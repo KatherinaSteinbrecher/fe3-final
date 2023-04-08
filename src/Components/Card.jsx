@@ -42,7 +42,7 @@ const Card = ({ name, username, id }) => {
       <h1>{name}</h1>
       <h1>{id}</h1>
       <h2>{username}</h2>
-      {<Link to={'/dentist/'+id}>Detail</Link>}
+      {<Link to={'/dentist/:{id}'}>Detail</Link>}
       <button onClick={() => addFav()} className="favButton">Add fav</button>
     </div>
   );

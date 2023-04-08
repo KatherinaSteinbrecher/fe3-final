@@ -12,7 +12,7 @@ const reducer = (state , action) => {
     case 'light':
       return {...state, theme:action.payload}
     default:
-      return action
+      return state
   }
 }
 

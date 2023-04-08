@@ -57,14 +57,7 @@ function Form() {
           />
           {errores.email && <p>{errores.email}</p>}
         </div>
-        <div>
-          <label htmlFor="mensaje">Mensaje:</label>
-          <textarea
-            id="mensaje"
-            value={mensaje}
-            onChange={(e) => setMensaje(e.target.value)}
-          ></textarea>
-        </div>
+        
         <button type="submit">Enviar</button>
       </form>
       {mostrarMensaje && <p>¡Enviado con éxito!</p>}
