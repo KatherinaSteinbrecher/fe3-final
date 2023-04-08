@@ -37,7 +37,7 @@ const Card = ({ name, username, id }) => {
 
   return (
     <div className="card">
-        <Link key={id} to={`/dentist/${id}`} >
+        
 
 <div>
   <img className="card-img"  src="/images/doctor.jpg" alt="Doctor" width={200}/>
@@ -45,7 +45,8 @@ const Card = ({ name, username, id }) => {
   <h2>{username}</h2>
   
 </div>
-
+<Link key={id} to={`/dentist/${id}`} >
+  Detail
 </Link>
       <button onClick={addFav} className="favButton">Add fav</button>
     </div>
