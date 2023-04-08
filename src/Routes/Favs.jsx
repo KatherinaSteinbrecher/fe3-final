@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "../Components/Card";
-import Navbar from '../Components/Navbar';
-import Footer from '../Components/Footer';
+
 
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 

@@ -1,14 +1,11 @@
 import React from 'react'
-import { useState, useEffect } from "react";
-import Navbar from '../Components/Navbar';
-import Footer from '../Components/Footer';
 import { useGlobalStates } from '../Components/utils/global.context';
 import { useParams } from 'react-router-dom';
 
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
 const Detail = () => {
-  const {dentist}=useGlobalStates
+  const {dentist} = useGlobalStates()
 
   // Consumiendo el parametro dinamico de la URL deberan hacer un fetch a un user en especifico
   const params = useParams();
